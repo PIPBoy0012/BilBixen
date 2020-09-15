@@ -16,20 +16,33 @@
       </ul>
     </div>
 
-    <h2 class="h2title">Personbiler</h2>
-    <div class="Imagegallery">
-      <div class="Carcontainer">
-        <img class="Carimage" src="img\371426730_c9db1a67cd_z.jpg" alt="">
-        <p class="DescriptionPris">100000 Dkk</p>
-        <p class="Description">Navn: allah</p>
-        <p class="Description">Aargang: 2032</p>
-        <p class="Description">KM: 222000</p>
+<!--
+    <?php
+    $select_image = query("SELECT * FROM Cars WHERE ``='$product_idn'") or die(mysql_error());
 
-      </div>
+    while($data = mysql_fetch_assoc($select_image))
+    {
+       echo $data['image'];
+    }
+     ?>
+
+   -->
+     <a href="Bil.html">
+       <div class="Imagegallery">
+         <div class="Carcontainer">
+           <img class="Carimage" src="img\371426730_c9db1a67cd_z.jpg" alt="">
+           <p class="DescriptionPris">100000 Dkk</p>
+           <p class="Description">Navn: allah</p>
+           <p class="Description">Aargang: 2032</p>
+           <p class="Description">KM: 222000</p>
+
+         </div>
 
 
-      <p class="Descriptionbottom">Se alt Information</p>
-    </div>
+         <p class="Descriptionbottom">Se alt Information</p>
+       </div>
+     </a>
+
 
   </body>
 
