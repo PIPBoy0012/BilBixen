@@ -1,5 +1,5 @@
 <?php
-/// Max PUSH
+// Thias Big Fixes and Stuff
 ini_set("display_errors", 0);
 
 
