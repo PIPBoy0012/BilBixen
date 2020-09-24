@@ -43,7 +43,7 @@ echo "Connected successfully";
 
 
 
-<a href="Bil.html">
+<a href="Bil.php">
 <div class="Imagegallery">
   <div class="Carcontainer">
     <img class="Carimage" src="img\371426730_c9db1a67cd_z.jpg" alt="">
