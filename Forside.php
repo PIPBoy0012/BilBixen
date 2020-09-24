@@ -1,7 +1,7 @@
 <?php
-
+///
 /* Version 0.60 */
-
+///
 ini_set("display_errors", 0);
 
 
