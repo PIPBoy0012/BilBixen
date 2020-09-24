@@ -17,6 +17,13 @@
 
     <div class="infoDiv">
       <img class="carbigpic" src="img\371426730_c9db1a67cd_z.jpg" alt="">
+      <div class="infoDivinfoBox">
+        <!-- Hvis Text Er justeret Skal CSS'en Fixes -->
+        <p> Bil Info Her</p>
+      </div>
+      <div class="infoDivprisbox">
+        <p>Pris Her</p>
+      </div>
 
     </div>
 
