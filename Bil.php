@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Bil</title>
-    <link rel="stylesheet" href="Forside.css">
+    <link rel="stylesheet" href="Main.css">
   </head>
   <body>
     <div class="Navbar">

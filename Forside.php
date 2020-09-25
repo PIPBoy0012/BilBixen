@@ -28,7 +28,7 @@ echo "Connected successfully";
 <head>
  <meta charset="utf-8">
  <title>Bilbixen</title>
- <link rel="stylesheet" href="Forside.css">
+ <link rel="stylesheet" href="Main.css">
 </head>
 <body>
 
