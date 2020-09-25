@@ -1,6 +1,6 @@
 <?php
 ///
-/* Version 0.60 */
+/* Version 0.62 */
 ///
 ini_set("display_errors", 0);
 
@@ -26,17 +26,11 @@ echo "Connected successfully";
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
-<<<<<<< HEAD
 
   <meta charset="utf-8">
   <title>Bilbixen</title>
   <link rel="stylesheet" href="Main.css">
 
-=======
- <meta charset="utf-8">
- <title>Bilbixen</title>
- <link rel="stylesheet" href="Main.css">
->>>>>>> 0260f101c8cc439c79ef5d782d3ff3c8c47927ea
 </head>
 <body>
  <div class="Navbar">
