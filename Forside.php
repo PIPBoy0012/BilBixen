@@ -2,25 +2,36 @@
 ///
 /* Version 0.62 */
 ///
-ini_set("display_errors", 0);
+
 
 
 function OpenCon()
 {
-  $servername = "94.177.229.154";
-  $username = "FL0D1N";
+  $serverName = "94.177.229.154";
+  $userName = "FL0D1N";
   $password = "Pepsi1234";
-  $dbname = "Bilbixen";
+  $dbName = "Bilbixen";
 
+
+  try{
+    $con = new PDO("mysql:host=$serverName;dbname=$dbName", $userName, $password);
+    $con->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    echo "Connection Succes";
+  }catch(PDOException $e){
+    echo "Error in connection" . $e->getmessage();
+  }
+  /*
   // Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
+  $conn = mysqli_connect($servername, $username, $password, $dbname);
 
-// Check connection
-if ($conn->connect_error) {
-  die("Connection failed: " . $conn->connect_error);
-  echo "dead";
-}
-echo "Connected successfully";
+  // Check connection
+  if (mysqli_connect_errno()) {
+    echo "Failed to connect";
+    exit();
+  }
+    echo "Connected successfully";
+  }
+*/
 }
  ?>
 <!DOCTYPE html>
