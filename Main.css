@@ -161,6 +161,10 @@ footer{
 
 }
 
+.Infocontainer{
+
+}
+
 .infoDivinfoBox{
   color: whitesmoke;
   font-weight: bold;
@@ -170,8 +174,7 @@ footer{
   border-radius: 12px;
   padding: 1%;
   display: inline-block;
-  float: left;
-
+  position: relative;
 }
 
 .infoDivprisbox{
