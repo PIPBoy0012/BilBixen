@@ -16,6 +16,7 @@
     </div>
 
     <div class="infoDiv">
+      <h2 class="Biltitle">Allah</h2>
       <img class="carbigpic" src="img\371426730_c9db1a67cd_z.jpg" alt="">
       <div class="Infocontainer">
         <div class="infoDivinfoBox">

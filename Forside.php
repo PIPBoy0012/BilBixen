@@ -3,26 +3,11 @@
 /* Version 0.62 */
 ///
 
-
-
-function OpenCon()
-{
   $serverName = "94.177.229.154";
   $userName = "FL0D1N";
   $password = "Pepsi1234";
   $dbName = "Bilbixen";
 
-
-  try{
-    $con = new PDO("mysql:host=$serverName;dbname=$dbName", $userName, $password);
-    $con->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    echo "Connection Succes";
-  }catch(PDOException $e){
-    echo "Error in connection" . $e->getmessage();
-  }
-}
-
-/*
   // Create connection
     $conn = mysqli_connect($serverName, $userName, $password, $dbName);
 
@@ -33,7 +18,6 @@ function OpenCon()
   }else {
     echo "Connected successfully";
   }
-*/
  ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
