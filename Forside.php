@@ -41,6 +41,10 @@
  </div>
 
  <h2 class="h2title">Personbiler</h2>
+<?php
+ echo "Hello";
+ ?>
+
 <a href="Bil.php">
 
 <div class="Imagegallery">
