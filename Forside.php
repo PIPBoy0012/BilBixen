@@ -20,19 +20,20 @@ function OpenCon()
   }catch(PDOException $e){
     echo "Error in connection" . $e->getmessage();
   }
-  /*
+}
+
+/*
   // Create connection
-  $conn = mysqli_connect($servername, $username, $password, $dbname);
+    $conn = mysqli_connect($serverName, $userName, $password, $dbName);
 
   // Check connection
   if (mysqli_connect_errno()) {
     echo "Failed to connect";
     exit();
-  }
+  }else {
     echo "Connected successfully";
   }
 */
-}
  ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
