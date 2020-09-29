@@ -2,22 +2,6 @@
 ///
 /* Version 0.62 */
 ///
-
-  $serverName = "94.177.229.154";
-  $userName = "FL0D1N";
-  $password = "Pepsi1234";
-  $dbName = "Bilbixen";
-
-  // Create connection
-    $conn = mysqli_connect($serverName, $userName, $password, $dbName);
-
-  // Check connection
-  if (mysqli_connect_errno()) {
-    echo "Failed to connect";
-    exit();
-  }else {
-    echo "Connected successfully";
-  }
  ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
@@ -42,9 +26,61 @@
 
  <h2 class="h2title">Personbiler</h2>
 <?php
- echo "Hello";
- ?>
 
+
+$serverName = "94.177.229.154";
+$userName = "FL0D1N";
+$password = "Pepsi1234";
+$dbName = "Bilbixen";
+
+// Create connection
+  $conn = mysqli_connect($serverName, $userName, $password, $dbName);
+
+// Check connection
+if (mysqli_connect_errno()) {
+  echo "Failed to connect";
+  exit();
+}else {
+  echo "Connected successfully";
+}
+
+
+$sql = "SELECT `Car_ID`, `Type`, `Price`, `Last_Inspection`, `Driven_Km`, `Color`, `Picture_path` FROM `Cars`";
+$result = $conn->query($sql);
+
+
+/*var_dump(mysqli_fetch_assoc($result));*/
+
+
+if ($result->num_rows > 0) {
+    // output data of each row
+    while($row = $result->fetch_assoc()) {
+
+        echo '  <a href="Bil.php">
+
+        <div class="Imagegallery">
+          <div class="Carcontainer">
+
+            <img class="Carimage" src="'. $row["Picture_path"].'" alt="">
+            <p class="DescriptionPris">'. $row["Price"].'  Dkk</p>
+            <p class="Description">Navn: '. $row["Type"].'</p>
+            <p class="Description">Sidste Indskeption: '. $row["Last_Inspection"].'</p>
+            <p class="Description">KM: '. $row["Driven_Km"].'</p>
+
+          </div>
+
+          <p class="Descriptionbottom">Se alt Information</p>
+
+        </div>
+
+        </a>';
+
+    }
+} else {
+    echo "0 results";
+}
+ ?>
+<!--
 <a href="Bil.php">
 
 <div class="Imagegallery">
@@ -63,6 +99,7 @@
 </div>
 
 </a>
+-->
 
 </body>
 <footer>
