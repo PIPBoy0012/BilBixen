@@ -1,6 +1,6 @@
 <?php
 ///
-/* Version 0.62 */
+/* Version 0.83 */
 ///
  ?>
 <!DOCTYPE html>
@@ -25,68 +25,72 @@
  </div>
 
  <h2 class="h2title">Personbiler</h2>
-<?php
+
+ <div class="AlltheDIVS">
+   <?php
 
 
-$serverName = "94.177.229.154";
-$userName = "FL0D1N";
-$password = "Pepsi1234";
-$dbName = "Bilbixen";
+   $serverName = "94.177.229.154";
+   $userName = "FL0D1N";
+   $password = "Pepsi1234";
+   $dbName = "Bilbixen";
 
-// Create connection
-  $conn = mysqli_connect($serverName, $userName, $password, $dbName);
-/*
-// Check connection
-if (mysqli_connect_errno()) {
-  echo "Failed to connect";
-  exit();
-}else {
-  echo "Connected successfully";
-}
-*/
+   // Create connection
+     $conn = mysqli_connect($serverName, $userName, $password, $dbName);
+   /*
+   // Check connection
+   if (mysqli_connect_errno()) {
+     echo "Failed to connect";
+     exit();
+   }else {
+     echo "Connected successfully";
+   }
+   */
 
-$sql = "SELECT `Car_ID`, `Type`, `Price`, `Last_Inspection`, `Driven_Km`, `Color`, `Picture_path` FROM `Cars`";
-$result = $conn->query($sql);
+   $sql = "SELECT `Car_ID`, `Type`, `Price`, `Last_Inspection`, `Driven_Km`, `Color`, `Picture_path` FROM `Cars`";
+   $result = $conn->query($sql);
 
 
-/*var_dump(mysqli_fetch_assoc($result));*/
+   /*var_dump(mysqli_fetch_assoc($result));*/
 
- //foreach ($variable as $key => $value) {
+    //foreach ($variable as $key => $value) {
 
-  if ($result->num_rows > 0)
-  {
-      // output data of each row
-      while($row = $result->fetch_assoc())
-      {
+     if ($result->num_rows > 0)
+     {
+         // output data of each row
+         while($row = $result->fetch_assoc())
+         {
 
-          echo '  <a href="Bil.php">
+             echo '  <a href="Bil.php">
 
-          <div class="Imagegallery">
-            <div class="Carcontainer">
+             <div class="Imagegallery">
+               <div class="Carcontainer">
 
-              <img class="Carimage" src="'. $row["Picture_path"].'" alt="">
-              <p class="DescriptionPris">'. $row["Price"].'  Dkk</p>
-              <p class="Description">Navn: '. $row["Type"].'</p>
-              <p class="Description">Sidste Indskeption: '. $row["Last_Inspection"].'</p>
-              <p class="Description">KM: '. $row["Driven_Km"].'</p>
+                 <img class="Carimage" src="'. $row["Picture_path"].'" alt="">
+                 <p class="DescriptionPris">'. $row["Price"].'  Dkk</p>
+                 <p class="Description">Navn: '. $row["Type"].'</p>
+                 <p class="Description">Sidste Indskeption: '. $row["Last_Inspection"].'</p>
+                 <p class="Description">KM: '. $row["Driven_Km"].'</p>
 
-            </div>
+               </div>
 
-            <p class="Descriptionbottom">Se alt Information</p>
+               <p class="Descriptionbottom">Se alt Information</p>
 
-          </div>
+             </div>
 
-          </a>';
+             </a>';
 
-      }
-  } else
-  {
-      echo "0 results";
-  }
+         }
+     } else
+     {
+         echo "0 results";
+     }
 
-//}
+   //}
 
- ?>
+    ?>
+ </div>
+
 <!--
 <a href="Bil.php">
 
@@ -113,10 +117,7 @@ $result = $conn->query($sql);
 
  <div class="Footerdiv">
 
-   <p>Bilbixen A/S</p>
-   <p>Brugtvognsvej 100</p>
-   <p>3784Brugtvogn City</p>
-   <p>+45 637-726-78</p>
+   <p>Bilbixen A/S  /  Brugtvognsvej 100  /  3784Brugtvogn City  /  +45 637-726-78</p>
 
  </div>
  </footer>
