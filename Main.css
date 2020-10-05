@@ -98,7 +98,7 @@ background-color: #111;
 
 .Carimage{
   max-width: 90%;
-  height: auto;
+  max-height: 90%
   border: 1px solid white ;
   border-radius: 12px;
   margin: 18px;

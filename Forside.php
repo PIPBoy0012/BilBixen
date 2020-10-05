@@ -30,63 +30,66 @@
    <?php
 
 
-   $serverName = "94.177.229.154";
-   $userName = "FL0D1N";
-   $password = "Pepsi1234";
-   $dbName = "Bilbixen";
+     $serverName = "94.177.229.154";
+     $userName = "FL0D1N";
+     $password = "Pepsi1234";
+     $dbName = "Bilbixen";
 
-   // Create connection
-     $conn = mysqli_connect($serverName, $userName, $password, $dbName);
-   /*
-   // Check connection
-   if (mysqli_connect_errno()) {
-     echo "Failed to connect";
-     exit();
-   }else {
-     echo "Connected successfully";
-   }
-   */
+     // Create connection
+       $conn = mysqli_connect($serverName, $userName, $password, $dbName);
 
-   $sql = "SELECT `Car_ID`, `Type`, `Price`, `Last_Inspection`, `Driven_Km`, `Color`, `Picture_path` FROM `Cars`";
-   $result = $conn->query($sql);
+     /*
+     // Check connection
+     if (mysqli_connect_errno()) {
+       echo "Failed to connect";
+       exit();
+     }else {
+       echo "Connected successfully";
+     }
+     */
+
+     $sql = "SELECT `Car_ID`, `Type`, `Price`, `Last_Inspection`, `Driven_Km`, `Color`, `Picture_path`, `Kategori` FROM `Cars`";
+     $result = $conn->query($sql);
 
 
-   /*var_dump(mysqli_fetch_assoc($result));*/
+     /*var_dump(mysqli_fetch_assoc($result));*/
 
-    //foreach ($variable as $key => $value) {
+      //foreach ($variable as $key => $value) {
 
-     if ($result->num_rows > 0)
-     {
-         // output data of each row
-         while($row = $result->fetch_assoc())
-         {
+       if ($result->num_rows > 0)
+       {
+           // output data of each row
+           while($row = $result->fetch_assoc())
+           {
 
-             echo '  <a href="Bil.php">
+               echo '  <a href="Bil.php">
 
-             <div class="Imagegallery">
-               <div class="Carcontainer">
+               <div class="Imagegallery">
+                 <div class="Carcontainer">
 
-                 <img class="Carimage" src="'. $row["Picture_path"].'" alt="">
-                 <p class="DescriptionPris">'. $row["Price"].'  Dkk</p>
-                 <p class="Description">Navn: '. $row["Type"].'</p>
-                 <p class="Description">Sidste Indskeption: '. $row["Last_Inspection"].'</p>
-                 <p class="Description">KM: '. $row["Driven_Km"].'</p>
+                   <img class="Carimage" src="'. $row["Picture_path"].'" alt="">
+                   <p class="DescriptionPris">'. $row["Price"].'  Dkk</p>
+                   <p class="Description">Navn: '. $row["Type"].'</p>
+                   <p class="Description">Kategori: '. $row["Kategori"].'</p>
+                   <p class="Description">Sidste Indskeption: '. $row["Last_Inspection"].'</p>
+                   <p class="Description">KM: '. $row["Driven_Km"].'</p>
+
+                 </div>
+
+                 <p class="Descriptionbottom">Se alt Information</p>
 
                </div>
 
-               <p class="Descriptionbottom">Se alt Information</p>
+               </a>';
 
-             </div>
+           }
+       } else
+       {
+           echo "0 results";
+       }
+       $conn->close();
 
-             </a>';
-
-         }
-     } else
-     {
-         echo "0 results";
-     }
-
-   //}
+     //}    
 
     ?>
  </div>

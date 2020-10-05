@@ -14,20 +14,25 @@
         <li><a href="#">Forhandler Login</a></li>
       </ul>
     </div>
+<?php
+echo '
+<div class="infoDiv">
+  <h2 class="Biltitle">Allah</h2>
+  <img class="carbigpic" src="img\371426730_c9db1a67cd_z.jpg" alt="">
+  <div class="Infocontainer">
+    <div class="infoDivinfoBox">
 
-    <div class="infoDiv">
-      <h2 class="Biltitle">Allah</h2>
-      <img class="carbigpic" src="img\371426730_c9db1a67cd_z.jpg" alt="">
-      <div class="Infocontainer">
-        <div class="infoDivinfoBox">
-          <!-- Hvis Text Er justeret Skal CSS'en Fixes -->
-          <p> Bil Info Her</p>
-        </div>
-        <div class="infoDivprisbox">
-          <p>Pris Her</p>
-        </div>
-      </div>
+      <p> Bil Info Her</p>
     </div>
+    <div class="infoDivprisbox">
+      <p>Pris Her</p>
+    </div>
+  </div>
+</div>
+';
+
+ ?>
+
 
   </body>
 </html>
