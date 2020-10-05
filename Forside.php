@@ -19,7 +19,7 @@
      <li> <a href="#">Biler</a></li>
      <li><a href="#">Om os</a></li>
      <li><a href="#">Kontakt</a></li>
-     <li><a href="#">Forhandler Login</a></li>
+     <li><a href="Login.php">Forhandler Login</a></li>
 
    </ul>
  </div>
@@ -89,7 +89,7 @@
        }
        $conn->close();
 
-     //}    
+     //}
 
     ?>
  </div>
