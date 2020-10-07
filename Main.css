@@ -209,3 +209,14 @@ border-radius: 12px;
 border: solid;
 border-color: rgba(0, 0, 0, 0.20);
 }
+
+/* Login CSS */
+
+.inputers{
+  color: whitesmoke;
+  padding: 50px;
+}
+
+.inputinlager{
+  padding-right: 5px;
+}

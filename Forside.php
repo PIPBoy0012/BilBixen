@@ -71,7 +71,7 @@
                    <p class="DescriptionPris">'. $row["Price"].'  Dkk</p>
                    <p class="Description">Navn: '. $row["Type"].'</p>
                    <p class="Description">Kategori: '. $row["Kategori"].'</p>
-                   <p class="Description">Sidste Indskeption: '. $row["Last_Inspection"].'</p>
+                   <p class="Description">Sidste indspektion: '. $row["Last_Inspection"].'</p>
                    <p class="Description">KM: '. $row["Driven_Km"].'</p>
 
                  </div>
