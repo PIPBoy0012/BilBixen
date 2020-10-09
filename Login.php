@@ -24,14 +24,21 @@
    </ul>
  </div>
 
-
 <div class="inputers">
-  <label for="fname">Username:</label>
-  <input type="text" id="fname" name="fname"><br><br>
-  <label for="lname"> Password:</label>
-  <input class="inputinlager" type="password" id="lname" name="lname"><br><br>
-  <input type="submit" name="" value="submit">
+  <form action="Scripts/LoginScript.php" method="post">
+    <div class="Logindivs">
+      <label class="labelfix" for="fname">E-mail:</label>
+      <input class="textboxes" type="text" name="mailuid" placeholder="E-mail"><br><br>
+    </div>
+    <div class="Logindivs">
+      <label for="lname">Password:</label>
+      <input class="textboxes" type="password" name="pwd" placeholder="Password"><br><br>
+      <input class="submitbutton" type="submit" name="" value="submit">
+    </div>
+
+  </form>
 </div>
+
 
 
 </body>
