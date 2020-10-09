@@ -25,6 +25,7 @@
  </div>
 
 <div class="inputers">
+  <h2>Login</h2>
   <form action="Scripts/LoginScript.php" method="post">
     <div class="Logindivs">
       <label class="labelfix" for="fname">E-mail:</label>

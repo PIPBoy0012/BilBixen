@@ -214,20 +214,24 @@ border-color: rgba(0, 0, 0, 0.20);
 /* Login CSS */
 
 .inputers{
-  margin: 40%;
+  margin-left: 40%;
+  margin-right: 40%;
+  margin-top: 10%;
   color: whitesmoke;
   border: 2px solid;
   border-color: rgba(0, 0, 0, 0.3);
   border-radius: 12px;
   color: whitesmoke;
+  background-color: rgba(71, 71, 75, 1);
+  text-align: center;
 
 
 }
 
 .Logindivs{
-  background-color: rgba(71, 71, 75, 1);
+
   padding: 5%;
-  
+
 }
 
 .labelfix{
